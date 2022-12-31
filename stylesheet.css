@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body
+{
+    background-color:  hsl(210, 46%, 95%);
+}
+.container-box
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 50%  50% ;
+    gap: 15px;
+    grid-template-areas: 
+    "first first second third"
+    "forth fifth fifth third"
+    ;
+    width:86% ;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+.item
+{
+ border-radius: 10px;
+}
+
+.item-1
+{
+  background-color:  hsl(263, 55%, 52%);
+  grid-area: first;
+  color: hsl(0, 0%, 100%);
+}
+.item-2
+{
+  background-color: hsl(217, 19%, 35%);
+  grid-area: second;
+  color: hsl(0, 0%, 100%);
+}
+.item-3
+{
+  background-color: hsl(0, 0%, 100%)   ;
+  grid-area: third;
+}
+.item-4
+{
+  background-color: hsl(0, 0%, 100%) ;
+  grid-area: forth;
+}
+.item-5
+{
+  background-color: hsl(219, 29%, 14%) ;
+  grid-area : fifth;
+  color: hsl(0, 0%, 100%);
+}
+.user-pic
+{
+  display: inline-block;
+  border-radius: 50%;
+  width: 23px;
+  margin: 10px;
+  float: left;
+}
+.user-name,.below-name
+{
+  position: relative;
+  top:6px;
+  left: 5px;
+  margin: 2px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.below-name
+{
+ 
+  opacity: 50%;
+  position: relative;
+  top:6px;
+  left: 5px;
+  margin: 2px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.first-text
+{
+  position: relative;
+  margin: 20px 20px;
+  clear: left;
+  font-size:2.2em;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 500;
+  z-index: 2;
+  
+ 
+}
+.second-text{
+  margin: 20px 20px;
+  font-size:13px ;
+  font-size: 1.3em;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 400;
+  opacity: 70%;
+}
+.quote
+{
+  position: absolute;
+  z-index: 1;
+  top:0%;
+   left:33.5%;
+}
+
+
+@media screen and (max-width:400px)
+{
+  .container-box
+  {
+   display: flex;
+   flex-direction: column;
+   flex-basis:90%;
+   margin-bottom: 20px;
+  }
+ .item-5{
+   order:4;
+
+ }
+ .item-3
+ {
+  order: 5;
+ }
+ .quote
+ {
+  left:60%;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ <style>
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+*/
+/* Daniel Clifford
+  Verified Graduate
+
+  I received a job offer mid-course, and the subjects I learned were current, if not more so, 
+  in the company I joined. I honestly feel I got every penny’s worth.
+
+  “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+  transition and have heard some people who had an amazing experience here. I signed up 
+  for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+  The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+  the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+
+  Jonathan Walters
+  Verified Graduate
+
+  The team was very supportive and kept me motivated
+
+  “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+  for a big company. This was one of the best investments I’ve made in myself. ”
+
+  Jeanette Harmon
+  Verified Graduate
+
+  An overall wonderful and rewarding experience
+
+  “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+  while doing something I love. ”
+
+  Patrick Abrams
+  Verified Graduate
+
+  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+  learning from their experiences was easy.
+
+  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+  gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+  junior developer. The standard is above the rest. You will get the personal attention you need from 
+  an incredible community of smart and amazing people. ”
+
+  Kira Whittle
+  Verified Graduate
+
+  Such a life-changing experience. Highly recommended!
+
+  “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+  professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+  student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+  did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+  project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+  could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+  experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+  100% recommend! ”
+  */
